@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordes</title>
+    <style>
+        p {
+            width: 25%;
+            height: 30px;
+            background: rgb(83, 83, 236);
+            color: white;
+            border: 5px solid black;
+        }
+
+        article p:first-child {
+            border-width: 10px;
+        }
+        article p:nth-child(2) {
+            border-color: red;
+        }
+        article p:nth-last-child(2){
+            border-style: dotted;
+        }
+        article p:last-child {
+            border-style: groove;
+        }
+        section p:first-child{
+            border-style: ridge;
+        }
+        section p:last-child{
+            border-style: inset
+        }
+        section p:nth-child(3){
+            border-style: outset;
+        }
+
+    </style>
+</head>
+
+<body>
+    <article>
+        <p>párrafo 1</p>
+        <p>párrafo 2</p>
+        <p>párrafo 3</p>
+        <p>párrafo 4</p>
+    </article>
+    <section>
+        <p>párrafo 5</p>
+        <p>párrafo 6</p>
+        <p>párrafo 7</p>
+        <p>párrafo 8</p>
+    </section>
+</body>
+
+</html>

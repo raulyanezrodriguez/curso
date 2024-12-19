@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipografías</title>
+    <style>
+        p:first-of-type {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            font-weight: 400;                       /* negrita = 800 */
+            font-style: italic;                     /* cursiva */
+            font-variant: small-caps;               /* versalitas */
+            font-stretch: ultra-expanded;           /* depende del navegador (separacion de fuente) */
+        }
+
+        p:nth-of-type(2) {
+            text-align: justify;                    /* valores: left, center, right, justify */
+            line-height: 15px;                      /* interlineado */
+            text-decoration: underline;             /* underline, line-through, overline */
+            text-decoration-color: red;
+            text-decoration-style: dashed;
+            text-transform: capitalize;             /* palabras letras mayúsculas */
+            text-indent: 20px;                      /* sangria en primera lineas */
+            letter-spacing: 3px;                    /* espaciado entre letras */
+            word-spacing: 3px;                     /* espaciado entre palabras */
+            text-shadow: 2px 2px 2px black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>
+        La propiedad font permite establecer de una sola vez los valores para todas las propiedades: font-style,
+        font-variant, font-weight, font-size, line-height y font-family en una hoja de estilo.
+    </p>
+    <p>
+        si, soy español a que quieres que te gane si, soy español a que quieres que te gane si, soy español a que
+        quieres que te gane si, soy español a que quieres que te gane
+        si, soy español a que quieres que te ganesi, soy español a que quieres que te ganesi, soy español a que quieres
+        que te ganesi, soy español a que quieres que te gane
+    </p>
+</body>
+
+</html>

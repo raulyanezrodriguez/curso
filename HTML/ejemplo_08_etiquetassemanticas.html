@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora ES</title>
+</head>
+<body>
+    <!-- 
+    Etiquetas semánticas
+    - header -> Cabecera
+    - nav -> navegación
+    - section -> Sección + (aria-label)
+    - article -> articulo + (aria-label)
+    - main -> principal
+    - aside -> Lateral
+    
+    - figure ->  figura
+        - figurecaption -> pie de figura
+    - footer -> pie 
+    
+    - video
+    - audio
+    - details -> seccion ocultable
+        - summary -> resumen del details
+    - addres -> direccion
+    - time -> fecha y hora
+    -->
+    <header>
+        <section aria-label="logo">
+            <figure>
+                <img src="#" alt="#">
+                <figcaption>Pandora</figcaption>
+            </figure>
+        </section>
+        <section aria-label="buscador">
+            <form action="#" method="get"></form>
+            <figure>
+                <a href="#" style="color: black;">
+                    <img src="#" alt="#">
+                </a>
+            </figure>
+        </section>
+
+        <hr color="pink">
+
+        <nav>
+            <a href="#" style="color: black;">BLACK FRIDAY</a>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-label="banner">
+            <details>
+                <summary>BLACKFRIDAY</summary>
+                <p>Rebajas al 20%</p>
+                <a href="#">Comprar</a>
+            </details>
+        </section>
+        <section aria-label="categorias">
+            <table>
+                <tr>
+                    <td>
+                        <article aria-label="foto">
+                            <figure>
+                                <img src="#" alt="#">
+                                <figcaption>
+                                    NOVEDADES 
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

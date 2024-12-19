@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos</title>
+    <style>
+        form[method="get"]{
+            background-color: green;
+        }
+        form[method="post"]{
+            background-color: red;
+            font-size: 20px;
+        }
+        input[value]{
+            border: 2px solid blue;
+            color: rgb(154, 43, 167);
+        }
+        form{
+            width: 250px;
+            color: blue;
+        }
+        form{
+            color: yellow;
+        }
+
+        input#azul + br + input[value] {
+            color: blue;
+        }
+        input#rojo + br + input[value] {
+            color: red;
+        }
+ */
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Añadir a cesta</legend>
+            <label for="azul">Café Azul</label><br>
+            <input type="number" name="azul" id="azul"><br>
+            <input type="submit" value="OK">
+        </fieldset>
+    </form>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Añadir a cesta</legend>
+            <label for="rojo">Café Rojo</label><br>
+            <input type="number" name="rojo" id="rojo"><br>
+            <input type="submit" value="OK">
+        </fieldset>
+    </form>
+</body>
+</html>

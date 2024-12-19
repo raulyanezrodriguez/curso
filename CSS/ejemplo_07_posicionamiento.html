@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1em;
+            padding: 0px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        main{
+            background-color: red;
+            padding: 10px;
+            width: 25%;
+            position: relative;
+        }
+        section:first-of-type{
+            background-color: aqua;
+            position: static;
+        }
+        section:nth-of-type(2){
+            background-color: beige;
+            position: relative; 
+            top: 20px; left: 30px;
+        }
+        section:nth-of-type(3){
+            background-color: lightcoral;
+            position: absolute;
+            top: 200px; left: 50px;
+        }
+        section:nth-of-type(4){
+            background-color: lightgreen;
+            position: sticky;
+            top: 200px;
+        }
+        h1, nav{
+            position: fixed;
+            top: 10px;
+            background-color: white;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Posicionamiento</h1>
+    <nav>barra de navegación</nav>
+
+    <main>
+        <section>
+            <h2>static</h2>
+            <article>
+                hola buenas tardes.
+            </article>
+        </section>
+    
+        <section>
+            <h2>relative</h2>
+            <article>
+                ya no hay buenas tardes.
+            </article>
+        </section>
+    
+        <section>
+            <h2>absolute</h2>
+            <article>
+                buenas noches.
+            </article>
+        </section>
+    
+        <section>
+            <h2>sticky</h2>
+            <article>
+                noches buenas.
+            </article>
+        </section>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p><p>...</p>
+        <p>...</p>
+        <p>...</p>
+        <p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p><p>...</p>
+    </main>
+    
+</body>
+
+</html>

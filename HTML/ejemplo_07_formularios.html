@@ -1,0 +1,44 @@
+<!--Ejemplo_08_Formulario.html-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="grabaform.php" method="get">
+        <label for="modelo">Modelo móvil</label><br>
+        <input type="text" name="modelo" id="modelo"><br>
+
+        <label for="comentarios">Comentarios</label>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+
+        <hr>
+        
+        <fieldset>
+            <legend>selector sexo</legend>
+
+        <p>sexo:</p>
+        <input type="radio" name="sexo" id="mujer" value="mujer" checked>
+        <label for="mujer">Mujer</label><br>
+        <input type="radio" name="sexo" id="hombre" value="hombre">
+        <label for="hombre">Hombre</label><br>
+        </fieldset>
+
+        <input type="submit" value="añadir al carrito"><br>
+
+        <select name="ciudades" id="ciudades">
+            <option disabled>Elige Opción</option>
+            <option value="madrid">--Madrid</option>
+            <optgroup label="Andalucia">
+                <option value="sevilla" selected>--Sevilla</option>
+                <option value="doshermanas">--Dos hermanas</option>
+            </optgroup>
+        </select>
+    </form>
+</body>
+
+</html>

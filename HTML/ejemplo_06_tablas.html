@@ -1,0 +1,186 @@
+<!--ejemplo_06_tablas.html-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+
+<body>
+    <h1>Tablas</h1>
+    <table border="3">
+        <tr style="background-color: rgb(173, 171, 171);">
+            <th>Nombre</th>
+            <th>Horas</th>
+            <th>Plazas</th>
+            <th>Horario</th>
+        </tr>
+        <tr>
+            <td>Introducción a XHTML</td>
+            <td colspan="2">20</td>
+            <td>9:00-13:00</td>
+        </tr>
+        <tr>
+            <td>CSS avanzado</td>
+            <td rowspan="2">40</td>
+            <td>15</td>
+            <td rowspan="2">16:00-20:00</td>
+        </tr>
+        <tr>
+            <td>Taller de usabilidad</td>
+            <td>10</td>
+
+        </tr>
+        <tr>
+            <td>Introducción a AJAX</td>
+            <td>60</td>
+            <td>20</td>
+            <td>8:30-12:30</td>
+        </tr>
+    </table><br>
+    <h1>Tabla 2</h1>
+    <table border="3">
+        <thead>
+            <tr>
+                <th rowspan="2">AÑO</th>
+                <th colspan="4">Expansión De Ventas</th>
+            </tr>
+            <tr>
+                <th>Producto A</th>
+                <th>Producto B</th>
+                <th>Producto C</th>
+                <th>Producto D</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>N-3</th>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <th>N-2</th>
+                <td>3</td>
+                <td>5</td>
+                <td>8</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <th>N-1</th>
+                <td>4</td>
+                <td>4</td>
+                <td>7</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <th>N</th>
+                <td>5</td>
+                <td>7</td>
+                <td>6</td>
+                <td>2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th rowspan="2">AÑO</th>
+                <th>Producto A</th>
+                <th>Producto B</th>
+                <th>Producto C</th>
+                <th>Producto D</th>
+            </tr>
+            <tr>
+                <th colspan="4">Expansión De Ventas</th>
+            </tr>
+        </tfoot>
+    </table><br>
+
+    <h2>Tabla 3</h2>
+
+    <table border="3">
+        <thead>
+            <tr>
+                <th colspan="4" style="color: white; background-color: rgb(72, 71, 71);">Animales en peligro de
+                    extinción</th>
+            </tr>
+            <tr style="background-color: grey;text-align: center">
+                <td>Nombre</td>
+                <td>Cabezas</td>
+                <td>Previsión 2010</td>
+                <td>Previsión 2020</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color: rgba(128, 128, 128, 0.661);">
+                <td style="text-align: justify">Ballena</td>
+                <td style="text-align: center">6000</td>
+                <td style="text-align: center">4000</td>
+                <td style="text-align: center">1500</td>
+            </tr>
+            <tr>
+                <td style="background-color: rgba(128, 128, 128, 0.661); text-align: justify;">Oso Pardo</td>
+                <td style="background-color: rgba(128, 128, 128, 0.661);text-align: center">50</td>
+                <td colspan="2" rowspan="2" style="background-color: red;text-align: center;">0</td>
+            </tr>
+            <tr>
+                <td style="background-color: rgba(128, 128, 128, 0.661);text-align: justify;">Lince</td>
+                <td style="background-color: rgba(128, 128, 128, 0.661);text-align: center">10</td>
+            </tr>
+            <tr style="background-color: rgba(128, 128, 128, 0.661);">
+                <td style="text-align: justify;">Tigre</td>
+                <td style="text-align: center">300</td>
+                <td colspan="2" style="text-align: center">210</td>
+        </tbody>
+        </tr>
+    </table><br>
+
+    <h2>Tabla 4</h2>
+
+    <table border="3">
+        <thead>
+            <tr>
+                <th colspan="4" style="color: white; background-color: rgb(78, 76, 76);">Climas en el Sur de América
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="4" style="background-color: rgb(128, 128, 128);text-align: center;">Parte de
+                    Arriba de <br>
+                    América del <br>
+                    Sur. Países <br>
+                    como: <br></td>
+                <td style="background-color: rgba(128, 128, 128, 0.645);text-align: center;">Venezuela</td>
+                <td rowspan="4" style="background-color: rgb(128, 128, 128);text-align: center;">Parte de <br> abajo de <br>
+                    américa del <br> sur. Paises <br> como: <br></td>
+                <td style="background-color: rgba(128, 128, 128, 0.645);text-align: center;">Argentina</td>
+            </tr>
+            <tr style="background-color: rgba(128, 128, 128, 0.645);text-align: center;">
+                <td>Colombia</td>
+                <td>Chile</td>
+            </tr>
+            <tr style="background-color: rgba(128, 128, 128, 0.645);text-align: center;">
+                <td>Ecuador</td>
+                <td>Uruguay</td>
+            </tr>
+            <tr style="background-color: rgba(128, 128, 128, 0.645);text-align: center;">
+                <td>Perú</td>
+                <td>Paraguay</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="background-color: rgb(37, 127, 118);text-align: center;">
+                <td colspan="2">Bosque tropical, clima de <br>
+                    sabana, clima marítimo <br>
+                    con inviernos secos.</td>
+                <td colspan="2">Climas marítimos con <br> veranos secos, con <br> inviernos secos, climas <br> fríos,clima de
+                    estapa, <br> clima desértico</td>
+            </tr>
+        </tfoot>
+    </table><br>
+</body>
+
+</html>

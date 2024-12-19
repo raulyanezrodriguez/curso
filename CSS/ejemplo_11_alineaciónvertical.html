@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alineación Vertical</title>
+    <style>
+        p {
+            border: solid blue;
+            height: 50px;
+            width: 40%;
+            align-items: center;
+            justify-items: center;
+        }
+
+        p:nth-of-type(2) span {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+    <p>párrafo con fragmento <span>Baseline</span></p>    
+    <p>párrafo con fragmento <span>top</span></p>
+    <p>párrafo con fragmento <span>super</span></p>
+    <p>párrafo con fragmento <span>+1em</span></p>
+</body>
+
+</html>

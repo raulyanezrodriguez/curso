@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas CSS</title>
+    <style>
+        nav {
+            margin: 0% auto;
+            text-align: center;
+        }
+        ul > li {
+            list-style-type: none;
+            display: inline;
+            margin: 10px;
+        }
+        ul > li > a {
+            text-decoration: none;
+        }
+        ul > li > a > span {
+            text-transform: uppercase;
+            color: #242424;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        ol > li {
+            list-style: lower-greek;
+            list-style-image: url();
+            list-style-position: inside;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"><span>moda mujer</span></a></li>
+            <li><a href="#"><span>deportes</span></a></li>
+            <li><a href="#"><span>electronica</span></a></li>
+            <li><a href="#"><span>hogar</span></a></li>
+            <li><a href="#"><span>supermercado</span></a></li>
+        </ul>
+    </nav>
+    <ol>
+        <li>recogida en tienda</li>
+        <li>envio a domicilio</li>
+        <li>devolucion gratis en tienda</li>
+        <li>click & car</li>
+    </ol>
+    
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!-- ejemplo_01_Selectoresbasicos.html-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectoresBásicos</title>
+    <style>
+        /*Selector Universal*/
+        *{
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Selector Base*/
+        span{
+            color: red;
+            background-color:aquamarine;
+        }
+        
+        /*selector descendente*/
+        p a {
+            color: green;
+        }
+
+        p span a {
+            color: red;
+        }
+        /*selector hijo*/
+        p > a{
+            font-weight: bold;
+        }
+        /*selecotores hijos y hermanos*/
+        p > span + a {
+            border: 2px solid violet;
+        }
+
+        p > span > a {
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>párrafo 1</p>
+    <p>párrafo 2</p>
+    <p>párrafo 3 con
+        <a href="#">Enlace</a>
+    </p>
+    <p>párrafo 4
+        <span>con
+            <a href="#">Enlace</a>
+        </span>
+    </p>
+    <p>párrafo 5
+        <span>con</span>
+        <a href="#">Enlace</a>
+    </p>
+</body>
+</html>
