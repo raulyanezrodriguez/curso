@@ -12,10 +12,27 @@
             background-color: aqua;
             color: red;
         }
+
+        p:hover {
+            transition-property: all;
+            transition-duration: 5s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease;       /* steps (pasos), ease (menos a más), ease-out (de mas a menos), ease-in (lineal) */
+            width: 60%;
+            font-size: 24px;
+            border-radius: 8px;
+            background-color: pink;
+            color: green;
+        }
+
+        h1::selection{
+            background-color: red;
+        }
     </style>
 </head>
 
 <body>
+    <h1>Titulo</h1>
     <p>este párrafo va a transformarse</p>
 </body>
 
