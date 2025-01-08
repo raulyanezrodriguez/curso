@@ -1,0 +1,307 @@
+
+/* Nombre: Raúl Yáñez Rodríguez*/
+
+/* Reglas Generales */
+/* ############################################# */
+/*01. */
+body {
+  font-size: 0.7em;
+  background-color: rgb(241, 241, 241);
+  font-family: inter;
+}
+
+/*02. */
+@font-face {
+  font-family: inter;
+  src: url(font/Inter.ttf);
+}
+
+/*03. */
+header{
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/*04. */
+aside{
+  border: 5px solid white;
+  border-radius: 20px;
+  border-top: 5px dashed white;
+}
+
+/* Reglas Header (Cabecera)*/
+/* ############################################# */
+/*05. */
+header > img, nav > form {
+  float: left;
+  position: absolute;
+  top: 20px;
+}
+
+/*05 (opcional). */
+
+/*06. */
+header > nav > form {
+  margin-top: 15px;
+  width: 45%;
+  text-align: right;
+  margin-left: 200px;
+}
+
+/*07. */
+header > nav > form > input{
+  border: 1px solid rgb(223, 85, 33);
+  padding: 5px 15px;
+  box-shadow: 5px 5px 10px rgb(223, 85, 33);
+  border-radius: 10px;
+}
+
+/*08. */
+header > figure > img{
+  vertical-align: middle;
+}
+
+/*09. */
+header > nav:nth-of-type(2) {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+/*10. */
+header > nav > a{
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  opacity: 90%;
+  margin: 0px 10px;
+  font-size: 15px;
+}
+
+/* Reglas Section Mensaje (Banner)*/
+/* ############################################# */
+/*11. */
+#primeranuncio{
+  padding: 5px;
+  width: 280px;
+  height: 80px;
+  background-color: linen;
+  border: 1px solid rgb(223, 85, 33);
+}
+
+/*12. */
+.boton{
+  position: relative;
+  bottom: 30px;
+  right: 10px;
+  float: right;
+  display: inline;
+}
+
+/* Reglas Aside (Laterales)*/
+/* ############################################# */
+/*13. */
+body > aside{
+  position: absolute;
+  width: 18%;
+  margin-left: 30px;
+  padding: 10px;
+  z-index: 10;
+}
+
+/*14. */
+body > aside > section > h2{
+  color: rgb(223, 85, 33);
+}
+
+/* Reglas Aside Izquierdo (Lateral Izquierdo)*/
+/* ############################################# */
+/*15. */
+body > header + section + aside{
+  top: 100px;
+  margin-right: 10px;
+}
+
+/*16. */
+body > aside > section > form label {
+  display: block;
+}
+
+/*17. */
+body > aside > section > form input[type="text"]{
+  border: 1px solid rgb(223, 85, 33);
+  padding: 2px;
+  box-shadow: 10px 10px 10px;
+  color: rgb(223, 85, 33);
+  width: 60%;
+  margin: 10px 0px;
+}
+
+/*18. */
+body > aside > section > form input[type="text"]:hover{
+  background-color: azure;
+}
+
+/*19. */
+body > aside > section > form input[type="submit"]{
+  border: 1px solid rgb(223, 85, 33);
+  border-radius: 5px;
+  display: block;
+  margin-top: 15px;
+  padding: 5px 10px;
+}
+
+/*20. */
+body > aside > section + section > h2 {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+/*21. */
+body > header + section + aside > section label,li > a{
+  color: rgb(100, 100, 100);
+  opacity: 80%;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/*22. */
+body > header + section + aside > section ul{
+  list-style-type: circle
+}
+
+/* Reglas Main */
+/* ############################################# */
+/*23. */
+main{
+  position: absolute;
+  top: 100px;
+  left: 26%;
+  padding: 10px;
+  width: 45%;
+}
+
+/*24. */
+main > h1{
+  color: rgb(223, 85, 33);
+}
+
+/*25. */
+main img {
+  float: right;
+  margin-top: -10px;
+  margin-right: -15px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  width: 30%;
+}
+
+/*26. */
+main h2 {
+  border: 1px solid rgb(223, 85, 33);
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+/*27. */
+main h2 > a, h4 > a {
+  text-decoration: none;
+  color: rgb(223, 85, 33);
+}
+
+/*28. */
+main header, h2, h2 + p, h3 {
+  float: left;
+  margin-bottom: 0px;
+}
+
+/*29. */
+main h3{
+  width: 100%;
+}
+
+
+/* Reglas Aside Derecho*/
+/* ############################################# */
+/*30. */
+main + aside{
+  top: 100px;
+  right: 10px;
+  margin-right: 10px;
+}
+
+/*31. */
+main + aside h2 {
+  color: rgb(223, 85, 33);
+}
+
+/*32. */
+main + aside caption {
+  caption-side: bottom;
+  color: rgb(223, 85, 33);
+  font-size: 20px;
+}
+
+/*33. */
+main + aside tr{
+  color: rgb(223, 85, 33);
+  font-weight: bold;
+}
+
+/*34. */
+main + aside a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+
+/*35. */
+main + aside span{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Reglas Footer*/
+/* ############################################# */
+/*36. */
+footer {
+  position: relative;
+  top: 750px;
+  width: 100%;
+  padding: 20px;
+}
+
+/*37. */
+footer table {
+  margin-left: 40%;
+  border-spacing: 40px;
+}
+
+/*38. */
+footer a {
+  display: inline-block;
+  text-decoration: overline;
+  color: rgb(223, 85, 33);
+}
+
+/*39. */
+body {
+  height: 850px;
+  background: linear-gradient(rgb(201, 201, 201), to rgb(118, 118, 118) );
+  background-image: url(img/meneame.png);
+  background-repeat: repeat-x; 
+  background-position: bottom; 
+  background-size: auto;
+}
+
+/*40. */
+footer a::first-letter{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ############################################# */
+/* FIN SECCIÓN CSS */
+/* ############################################# */

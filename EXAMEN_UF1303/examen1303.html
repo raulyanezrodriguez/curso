@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    var cerraranuncio = (anuncio) => {
+      document.getElementById(anuncio).style.display = "none";
+
+      setTimeout(() => {
+        document.getElementById(anuncio).style.display = "block";
+      }, 30000); //cuatro segundos
+    };
+  </script>
+  <link rel="stylesheet" href="examen1303.css" />
+  <style>
+/* Nombre: Raúl Yáñez Rodríguez*/
+
+/* Reglas Generales */
+/* ############################################# */
+/*01. */
+body {
+  font-size: 0.7em;
+  background-color: rgb(241, 241, 241);
+  font-family: inter;
+}
+
+/*02. */
+@font-face {
+  font-family: inter;
+  src: url(font/Inter.ttf);
+}
+
+/*03. */
+header{
+  height: 80px;
+  width: 100%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/*04. */
+aside{
+  border: 5px solid white;
+  border-radius: 20px;
+  border-top: 5px dashed white;
+}
+
+/* Reglas Header (Cabecera)*/
+/* ############################################# */
+/*05. */
+header > img, nav > form {
+  float: left;
+  position: absolute;
+  top: 20px;
+}
+
+/*05 (opcional). */
+
+/*06. */
+header > nav > form {
+  margin-top: 15px;
+  width: 45%;
+  text-align: right;
+  margin-left: 200px;
+}
+
+/*07. */
+header > nav > form > input{
+  border: 1px solid rgb(223, 85, 33);
+  padding: 5px 15px;
+  box-shadow: 5px 5px 10px rgb(223, 85, 33);
+  border-radius: 10px;
+}
+
+/*08. */
+header > figure > img{
+  vertical-align: middle;
+}
+
+/*09. */
+header > nav:nth-of-type(2) {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+/*10. */
+header > nav > a{
+  text-decoration: none;
+  color: rgb(100, 100, 100);
+  opacity: 90%;
+  margin: 0px 10px;
+  font-size: 15px;
+}
+
+/* Reglas Section Mensaje (Banner)*/
+/* ############################################# */
+/*11. */
+#primeranuncio{
+  padding: 5px;
+  width: 280px;
+  height: 80px;
+  background-color: linen;
+  border: 1px solid rgb(223, 85, 33);
+}
+
+/*12. */
+.boton{
+  position: relative;
+  bottom: 30px;
+  right: 10px;
+  float: right;
+  display: inline;
+}
+
+/* Reglas Aside (Laterales)*/
+/* ############################################# */
+/*13. */
+body > aside{
+  position: absolute;
+  width: 18%;
+  margin-left: 30px;
+  padding: 10px;
+  z-index: 10;
+}
+
+/*14. */
+body > aside > section > h2{
+  color: rgb(223, 85, 33);
+}
+
+/* Reglas Aside Izquierdo (Lateral Izquierdo)*/
+/* ############################################# */
+/*15. */
+body > header + section + aside{
+  top: 100px;
+  margin-right: 10px;
+}
+
+/*16. */
+body > aside > section > form label {
+  display: block;
+}
+
+/*17. */
+body > aside > section > form input[type="text"]{
+  border: 1px solid rgb(223, 85, 33);
+  padding: 2px;
+  box-shadow: 10px 10px 10px;
+  color: rgb(223, 85, 33);
+  width: 60%;
+  margin: 10px 0px;
+}
+
+/*18. */
+body > aside > section > form input[type="text"]:hover{
+  background-color: azure;
+}
+
+/*19. */
+body > aside > section > form input[type="submit"]{
+  border: 1px solid rgb(223, 85, 33);
+  border-radius: 5px;
+  display: block;
+  margin-top: 15px;
+  padding: 5px 10px;
+}
+
+/*20. */
+body > aside > section + section > h2 {
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+/*21. */
+body > header + section + aside > section label,li > a{
+  color: rgb(100, 100, 100);
+  opacity: 80%;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/*22. */
+body > header + section + aside > section ul{
+  list-style-type: circle
+}
+
+/* Reglas Main */
+/* ############################################# */
+/*23. */
+main{
+  position: absolute;
+  top: 100px;
+  left: 26%;
+  padding: 10px;
+  width: 45%;
+}
+
+/*24. */
+main > h1{
+  color: rgb(223, 85, 33);
+}
+
+/*25. */
+main img {
+  float: right;
+  margin-top: -10px;
+  margin-right: -15px;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  width: 30%;
+}
+
+/*26. */
+main h2 {
+  border: 1px solid rgb(223, 85, 33);
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+/*27. */
+main h2 > a, h4 > a {
+  text-decoration: none;
+  color: rgb(223, 85, 33);
+}
+
+/*28. */
+main header, h2, h2 + p, h3 {
+  float: left;
+  margin-bottom: 0px;
+}
+
+/*29. */
+main h3{
+  width: 100%;
+}
+
+
+/* Reglas Aside Derecho*/
+/* ############################################# */
+/*30. */
+main + aside{
+  top: 100px;
+  right: 10px;
+  margin-right: 10px;
+}
+
+/*31. */
+main + aside h2 {
+  color: rgb(223, 85, 33);
+}
+
+/*32. */
+main + aside caption {
+  caption-side: bottom;
+  color: rgb(223, 85, 33);
+  font-size: 20px;
+}
+
+/*33. */
+main + aside tr{
+  color: rgb(223, 85, 33);
+  font-weight: bold;
+}
+
+/*34. */
+main + aside a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+
+/*35. */
+main + aside span{
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Reglas Footer*/
+/* ############################################# */
+/*36. */
+footer {
+  position: relative;
+  top: 750px;
+  width: 100%;
+  padding: 20px;
+}
+
+/*37. */
+footer table {
+  margin-left: 40%;
+  border-spacing: 40px;
+}
+
+/*38. */
+footer a {
+  display: inline-block;
+  text-decoration: overline;
+  color: rgb(223, 85, 33);
+}
+
+/*39. */
+body {
+  height: 850px;
+  background: linear-gradient(rgb(201, 201, 201), to rgb(118, 118, 118) );
+  background-image: url(img/meneame.png);
+  background-repeat: repeat-x; 
+  background-position: bottom; 
+  background-size: auto;
+}
+
+/*40. */
+footer a::first-letter{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ############################################# */
+/* FIN SECCIÓN CSS */
+/* ############################################# */
+  </style>
+</head>
+
+<!-- EL HTML NO SE TOCA!!! -->
+<!-- ########################################################### -->
+
+<body>
+  <!-- HEADER -->
+  <!-- ############################ -->
+  <header>
+    <figure>
+      <img src="img/meneame.png" alt="..." />
+    </figure>
+    <nav>
+      <form action="#">
+        <img src="img/buscar.png" alt="..." />
+        <input type="text" id="buscar" name="buscar" />
+        <input type="submit" value="Buscar" />
+      </form>
+    </nav>
+    <nav>
+      <a href="#">Login</a>
+      <a href="#">Registrate</a>
+    </nav>
+  </header>
+
+  <!-- Banner (CON MORALEJA ;D) -->
+  <!-- ############################ -->
+  <section id="primeranuncio" class="anuncio">
+    <h4>Examen CSS</h4>
+    <p>No te angusties si no te queda igual ;)</p>
+    <button class="boton" onclick="cerraranuncio('primeranuncio')">x</button>
+  </section>
+
+  <!-- ASIDE IZQUIERDO -->
+  <!-- ############################ -->
+  <aside>
+    <section>
+      <h2>Registro</h2>
+      <form action="#">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" name="usuario" />
+        <label for="clave">Contraseña:</label>
+        <input type="text" id="clave" name="clave" />
+        <input type="submit" value="Acceso" />
+      </form>
+    </section>
+    <section>
+      <h2>Otras secciones</h2>
+      <ul>
+        <li><a href="#">Portada</a></li>
+        <li><a href="#">Nuevas</a></li>
+        <li><a href="#">Artículos</a></li>
+        <li><a href="#">Populares</a></li>
+      </ul>
+    </section>
+  </aside>
+
+  <!-- MAIN -->
+  <!-- ############################ -->
+  <main>
+    <h1>Menéame</h1>
+    <article>
+      <header>
+        <h2><a href="#">Únete a Tecnología</a></h2>
+        <p>por cernicalo a eldiario.es 21/12 17:38 publicado: 21/12 22:20</p>
+        <h3>
+          Casi 5 millones de euros de sanción a Netflix por ocultar dónde
+          envía los datos de sus usuarios
+        </h3>
+      </header>
+      <section>
+        <h4><a href="https://www.eldiario.es">www.eldiario.es</a></h4>
+        <figure>
+          <img src="img/netflix.webp" alt="..." />
+        </figure>
+        <p>
+          La Autoridad Holandesa de Protección de Datos (DPA, por sus siglas
+          en inglés) ha impuesto una sanción de 4,75 millones de euros a
+          Netflix por no informar adecuadamente a sus clientes sobre cómo
+          maneja sus datos personales.
+        </p>
+        <p>
+          La investigación, iniciada en 2019, reveló que la compañía no
+          proporcionaba información clara en su declaración de privacidad
+          sobre el uso de los datos recopilados, incluyendo direcciones de
+          correo electrónico, números de teléfono, detalles de pago y el
+          historial de visualización.
+        </p>
+      </section>
+    </article>
+    <article>
+      <header>
+        <h2><a href="#">Únete a Cultura</a></h2>
+        <p>Por ccguy a jotdown.es 04:23 publicado: hace 18 min</p>
+        <h3>MacGyver: no sin mi navaja</h3>
+      </header>
+      <section>
+        <h4><a href="https://www.jotdown.es">www.jotdown.es</a></h4>
+        <figure>
+          <img src="img/macgyver.webp" alt="..." />
+        </figure>
+        <p>
+          MacGyver fue el auténtico inventor del branded content en los
+          contenidos televisivos. Fue un pionero. Nadie había hecho tanto, con
+          el permiso de Eduardo Manostijeras, para promocionar la navaja
+          multiusos del ejército suizo.
+        </p>
+        <p>
+          El personaje interpretado por el entrañable Richard Dean Anderson demostraba en cada capítulo que con un
+          chicle, una pizca de curry, cien gramos de harina, dos cucharadas de azufre, veinte centímetros de alambre, un
+          poco de papel higiénico, todo bien salpimentado y nada removido, y, por supuesto, su fantástica navaja...
+        </p>
+      </section>
+    </article>
+  </main>
+
+  <!-- ASIDE DERECHO -->
+  <!-- ############################ -->
+  <aside>
+    <h2>En comunidades</h2>
+    <table>
+      <caption>
+        Otras noticias
+      </caption>
+      <tr>
+        <td>11 meneos</td>
+        <td>
+          <a href="#">
+            <span>CÁÑAMO</span> Cuatro detenidos en Burgos y Badajoz por
+            tráfico de marihuana mediante cultivo ilícito de cáñamo
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>72 meneos</td>
+        <td>
+          <a href="#">
+            <span>SEQUÍA</span> España, en situación de sequía meteorológica
+            tras el segundo invierno más seco desde 1961
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>28 meneos</td>
+        <td>
+          <a href="#">
+            <span>ARTÍCULOS</span> La guerra y el PDF. Un vínculo necesario
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>07 meneos</td>
+        <td>
+          <a href="#">
+            <span>ARTÍCULOS</span> El conflicto Rusia, EEUU, China, Europa...
+            era inevitable
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td>07 meneos</td>
+        <td>
+          <a href="#">
+            <span>FOSILES</span> Así es ‘Horridus’, el triceratops más
+            completo que se ha encontrado hasta ahora
+          </a>
+        </td>
+      </tr>
+    </table>
+  </aside>
+
+  <!-- FOOTER -->
+  <!-- ############################ -->
+  <footer>
+    <table>
+      <tr>
+        <td><a href="#">Ayuda</a></td>
+        <td><a href="#">Blog</a></td>
+        <td><a href="#">Nótame</a></td>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>
